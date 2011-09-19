@@ -90,7 +90,7 @@ package org.swiftsuspenders
 
 		public function getCtorInjectionPoint() : InjectionPoint
 		{
-			const parameters : Array = _traits.constructor;
+			const parameters : Array = _traits["constructor"];
 			if (!parameters)
 			{
 				if (_traits.bases.length > 0)

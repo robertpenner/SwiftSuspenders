@@ -28,6 +28,6 @@ package org.swiftsuspenders.utils
 			var fqcn : String = getQualifiedClassName(value);
 			return Class(getDefinitionByName(fqcn));
 		}
-		return value.constructor;
+		return value.constructor as Class;
 	}
 }
